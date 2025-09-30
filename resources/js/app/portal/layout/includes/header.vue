@@ -12,25 +12,25 @@
             </button>
             <div class="top-0 z-50 bottom-0 bg-white lg:bg-transparent h-screen lg:h-auto w-[360px] lg:w-auto fixed lg:static flex justify-center flex-col lg:flex-row lg:justify-end items-center gap-5 duration-500" :class="{ 'end-0' : isSidebarActive, '-end-[360px]' : !isSidebarActive }" @click.stop>
                 <div class="absolute top-0 end-0 p-4 lg:hidden">
-                    <button type="button" class="cursor-pointer min-w-[45px] max-w-[45px] min-h-[45px] max-h-[45px] inline-flex lg:hidden justify-center items-center outline-0 border-0 bg-gray-300 hover:bg-gray-700 text-gray-900 hover:text-white duration-500 rounded-full" @click="isSidebarActive = false">
+                    <button type="button" class="cursor-pointer min-w-[45px] max-w-[45px] min-h-[45px] max-h-[45px] inline-flex lg:hidden justify-center items-center outline-0 border-0 bg-gray-300 hover:bg-gray-700 text-gray-900 hover:text-white duration-500 rounded-full" @click="closeSidebar()">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                         </svg>
                     </button>
                 </div>
-                <RouterLink :to="{name:'home'}" :class="{ 'text-amber-500' : $route.name === 'home', 'text-black lg:text-white' : $route.name !== 'home' }" class="decoration-0 text-sm duration-500 hover:text-amber-500" @click="isSidebarActive = false">
+                <RouterLink :to="{name:'home'}" :class="{ 'text-amber-500' : $route.name === 'home', 'text-black lg:text-white' : $route.name !== 'home' }" class="decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar()">
                     Home
                 </RouterLink>
-                <RouterLink :to="{name:'login'}" :class="{ 'text-amber-500' : $route.name === 'login', 'text-black lg:text-white' : $route.name !== 'login' }" class="decoration-0 text-sm duration-500 hover:text-amber-500" @click="isSidebarActive = false">
+                <RouterLink :to="{name:'login'}" :class="{ 'text-amber-500' : $route.name === 'login', 'text-black lg:text-white' : $route.name !== 'login' }" class="decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar()">
                     Login
                 </RouterLink>
-                <RouterLink :to="{name:'registration'}" :class="{ 'text-amber-500' : $route.name === 'registration', 'text-black lg:text-white' : $route.name !== 'registration' }" class="decoration-0 text-sm duration-500 hover:text-amber-500" @click="isSidebarActive = false">
+                <RouterLink :to="{name:'registration'}" :class="{ 'text-amber-500' : $route.name === 'registration', 'text-black lg:text-white' : $route.name !== 'registration' }" class="decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar()">
                     Registration
                 </RouterLink>
-                <RouterLink :to="{name:'details'}" :class="{ 'text-amber-500' : $route.name === 'details', 'text-black lg:text-white' : $route.name !== 'details' }" class="decoration-0 text-sm duration-500 hover:text-amber-500" @click="isSidebarActive = false">
+                <RouterLink :to="{name:'details'}" :class="{ 'text-amber-500' : $route.name === 'details', 'text-black lg:text-white' : $route.name !== 'details' }" class="decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar()">
                     Details
                 </RouterLink>
-                <a href="javascript:void(0)" class="text-black lg:text-white decoration-0 text-sm duration-500 hover:text-amber-500" @click="isSidebarActive = false">
+                <a href="javascript:void(0)" class="text-black lg:text-white decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar()">
                     Logout
                 </a>
             </div>
@@ -65,6 +65,9 @@ export default {
             this.isSidebarActive = !this.isSidebarActive;
         },
         handleOutSideClick() {
+            this.isSidebarActive = false;
+        },
+        closeSidebar() {
             this.isSidebarActive = false;
         }
     }

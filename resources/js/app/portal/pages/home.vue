@@ -8,7 +8,7 @@
         <!-- / slider -->
 
         <!-- content -->
-        <div class="w-full px-10 h-full absolute inset-0 flex justify-center items-center flex-col bg-black/55 z-5">
+        <div class="w-full px-10 h-full absolute inset-0 flex justify-center items-center flex-col bg-black/75 z-5">
 
             <!-- title -->
             <div class="text-white text-6xl max-w-[600px] leading-[75px] text-center">
@@ -506,9 +506,9 @@
             <div class="mt-10 flex justify-center items-center">
 
                 <!-- view all portfolio -->
-                <RouterLink :to="{name:'projects'}" class="inline-block text-sm shadow-none hover:shadow-inner decoration-0 border-2 border-amber-600 text-amber-600 hover:text-white bg-transparent hover:bg-amber-600 duration-500 rounded-md px-10 py-3">
+                <a href="javascript:void(0)" class="inline-block text-sm shadow-none hover:shadow-inner decoration-0 border-2 border-amber-600 text-amber-600 hover:text-white bg-transparent hover:bg-amber-600 duration-500 rounded-md px-10 py-3">
                     View All Works
-                </RouterLink>
+                </a>
                 <!-- / view all portfolio -->
 
             </div>
@@ -710,9 +710,9 @@
             <div class="mt-10 flex justify-center items-center">
 
                 <!-- link -->
-                <RouterLink :to="{name:'blogs'}" class="inline-block text-sm shadow-none hover:shadow-inner decoration-0 border-2 border-amber-600 text-amber-600 hover:text-white bg-transparent hover:bg-amber-600 duration-500 rounded-md px-10 py-3">
+                <a href="javascript:void(0)" class="inline-block text-sm shadow-none hover:shadow-inner decoration-0 border-2 border-amber-600 text-amber-600 hover:text-white bg-transparent hover:bg-amber-600 duration-500 rounded-md px-10 py-3">
                     View All Blogs
-                </RouterLink>
+                </a>
                 <!-- / link -->
 
             </div>

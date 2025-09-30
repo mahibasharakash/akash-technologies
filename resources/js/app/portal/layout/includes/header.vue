@@ -1,6 +1,6 @@
 <template>
 
-    <header class="w-full font-medium top-0 start-0 end-0 fixed z-50 backdrop-blur-xl" :class="{ 'shadow-2xl bg-gray-900/85' : isScrolled, 'shadow-none bg-gray-900/50' : !isScrolled }">
+    <header class="w-full font-medium top-0 start-0 end-0 fixed z-50 duration-500" :class="{ 'shadow-2xl bg-gray-900/85 backdrop-blur-xl' : isScrolled, 'shadow-none bg-transparent backdrop-blur-0' : !isScrolled }">
         <div class="px-10 max-w-7xl mx-auto w-full flex justify-between items-center duration-500" :class="{ 'min-h-[80px]' : isScrolled, 'min-h-[70px]' : !isScrolled }">
             <RouterLink :to="{name:'home'}" class="decoration-0 text-white text-lg">
                 Akash Technologies
@@ -21,12 +21,18 @@
                 <RouterLink :to="{name:'home'}" :class="{ 'text-amber-500' : $route.name === 'home', 'text-black lg:text-white' : $route.name !== 'home' }" class="decoration-0 text-sm duration-500 hover:text-amber-500" @click="isSidebarActive = false">
                     Home
                 </RouterLink>
-                <RouterLink :to="{name:'blogs'}" :class="{ 'text-amber-500' : $route.name === 'blogs', 'text-black lg:text-white' : $route.name !== 'blogs' }" class="decoration-0 text-sm duration-500 hover:text-amber-500" @click="isSidebarActive = false">
-                    Blogs
+                <RouterLink :to="{name:'login'}" :class="{ 'text-amber-500' : $route.name === 'login', 'text-black lg:text-white' : $route.name !== 'login' }" class="decoration-0 text-sm duration-500 hover:text-amber-500" @click="isSidebarActive = false">
+                    Login
                 </RouterLink>
-                <RouterLink :to="{name:'projects'}" :class="{ 'text-amber-500' : $route.name === 'projects', 'text-black lg:text-white' : $route.name !== 'projects' }" class="decoration-0 text-sm duration-500 hover:text-amber-500" @click="isSidebarActive = false">
-                    Projects
+                <RouterLink :to="{name:'registration'}" :class="{ 'text-amber-500' : $route.name === 'registration', 'text-black lg:text-white' : $route.name !== 'registration' }" class="decoration-0 text-sm duration-500 hover:text-amber-500" @click="isSidebarActive = false">
+                    Registration
                 </RouterLink>
+                <RouterLink :to="{name:'details'}" :class="{ 'text-amber-500' : $route.name === 'details', 'text-black lg:text-white' : $route.name !== 'details' }" class="decoration-0 text-sm duration-500 hover:text-amber-500" @click="isSidebarActive = false">
+                    Details
+                </RouterLink>
+                <a href="javascript:void(0)" class="text-black lg:text-white decoration-0 text-sm duration-500 hover:text-amber-500" @click="isSidebarActive = false">
+                    Logout
+                </a>
             </div>
         </div>
     </header>

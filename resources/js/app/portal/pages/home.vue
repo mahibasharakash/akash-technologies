@@ -522,52 +522,142 @@
         <div class="px-10 max-w-7xl mx-auto w-full py-16">
             <div class="w-full">
 
-                <!-- quote -->
-                <div class="flex justify-center mb-8">
-                    <svg viewBox="0 0 16 16" class="w-20 h-20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path d="M5.29289 1.29291L6.70711 2.70712L3 6.41423V7.00001H7V14H1V5.5858L5.29289 1.29291Z" class="fill-amber-600"></path>
-                            <path d="M15 7.00001H11V6.41423L14.7071 2.70712L13.2929 1.29291L9 5.5858V14H15V7.00001Z" class="fill-amber-600"></path>
-                        </g>
-                    </svg>
-                </div>
-                <!-- / quote -->
+                <div class="overflow-hidden min-h-[370px] max-h-[370px] relative">
 
-                <!-- description text -->
-                <div class="text-md mb-4 text-center mx-auto max-w-[700px] text-gray-600">
-                    Build content-rich and secure customer experiences with Drupal on the front-end and BigCommerce on the back-end. Our module is easy to manage and designed to meet whatever commerce needs your business has.
-                </div>
-                <!-- / description text -->
+                    <div class="duration-500 flex justify-center items-center absolute inset-0 w-full h-full" :class="{ 'top-0' : isContentText === 1, 'top-full' : isContentText !== 1 }">
 
-                <!-- author -->
-                <div class="text-xl text-center font-semibold mb-1">
-                    Samantha Riza
-                </div>
-                <!-- / author -->
+                        <div class="w-full h-auto">
 
-                <!-- author designation -->
-                <div class="text-sm text-center font-medium text-gray-400">
-                    CEO, Aliverr Expo
+                            <!-- quote -->
+                            <div class="flex justify-center mb-8">
+                                <svg viewBox="0 0 16 16" class="w-20 h-20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path d="M5.29289 1.29291L6.70711 2.70712L3 6.41423V7.00001H7V14H1V5.5858L5.29289 1.29291Z" class="fill-amber-600"></path>
+                                        <path d="M15 7.00001H11V6.41423L14.7071 2.70712L13.2929 1.29291L9 5.5858V14H15V7.00001Z" class="fill-amber-600"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <!-- / quote -->
+
+                            <!-- description text -->
+                            <div class="text-md mb-4 text-center mx-auto max-w-[700px] text-gray-600">
+                                Build content-rich and secure customer experiences with Drupal on the front-end and BigCommerce on the back-end. Our module is easy to manage and designed to meet whatever commerce needs your business has.
+                            </div>
+                            <!-- / description text -->
+
+                            <!-- author -->
+                            <div class="text-xl text-center font-semibold mb-1">
+                                Samantha Riza
+                            </div>
+                            <!-- / author -->
+
+                            <!-- author designation -->
+                            <div class="text-sm text-center font-medium text-gray-400">
+                                CEO, Aliverr Expo
+                            </div>
+                            <!-- / author designation -->
+
+                        </div>
+
+                    </div>
+
+                    <div class="duration-500 flex justify-center items-center absolute inset-0 w-full h-full" :class="{ 'top-0' : isContentText === 2, 'top-full' : isContentText !== 2 }">
+
+                        <div class="w-full h-auto">
+
+                            <!-- quote -->
+                            <div class="flex justify-center mb-8">
+                                <svg viewBox="0 0 16 16" class="w-20 h-20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path d="M5.29289 1.29291L6.70711 2.70712L3 6.41423V7.00001H7V14H1V5.5858L5.29289 1.29291Z" class="fill-amber-600"></path>
+                                        <path d="M15 7.00001H11V6.41423L14.7071 2.70712L13.2929 1.29291L9 5.5858V14H15V7.00001Z" class="fill-amber-600"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <!-- / quote -->
+
+                            <!-- description text -->
+                            <div class="text-md mb-4 text-center mx-auto max-w-[700px] text-gray-600">
+                                Build content-rich and secure customer experiences with Drupal on the front-end and BigCommerce on the back-end. Our module is easy to manage and designed to meet whatever commerce needs your business has.
+                            </div>
+                            <!-- / description text -->
+
+                            <!-- author -->
+                            <div class="text-xl text-center font-semibold mb-1">
+                                Samantha Riza
+                            </div>
+                            <!-- / author -->
+
+                            <!-- author designation -->
+                            <div class="text-sm text-center font-medium text-gray-400">
+                                CEO, Aliverr Expo
+                            </div>
+                            <!-- / author designation -->
+
+                        </div>
+
+                    </div>
+
+                    <div class="duration-500 flex justify-center items-center absolute inset-0 w-full h-full" :class="{ 'top-0' : isContentText === 3, 'top-full' : isContentText !== 3 }">
+
+                        <div class="w-full h-auto">
+
+                            <!-- quote -->
+                            <div class="flex justify-center mb-8">
+                                <svg viewBox="0 0 16 16" class="w-20 h-20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path d="M5.29289 1.29291L6.70711 2.70712L3 6.41423V7.00001H7V14H1V5.5858L5.29289 1.29291Z" class="fill-amber-600"></path>
+                                        <path d="M15 7.00001H11V6.41423L14.7071 2.70712L13.2929 1.29291L9 5.5858V14H15V7.00001Z" class="fill-amber-600"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <!-- / quote -->
+
+                            <!-- description text -->
+                            <div class="text-md mb-4 text-center mx-auto max-w-[700px] text-gray-600">
+                                Build content-rich and secure customer experiences with Drupal on the front-end and BigCommerce on the back-end. Our module is easy to manage and designed to meet whatever commerce needs your business has.
+                            </div>
+                            <!-- / description text -->
+
+                            <!-- author -->
+                            <div class="text-xl text-center font-semibold mb-1">
+                                Samantha Riza
+                            </div>
+                            <!-- / author -->
+
+                            <!-- author designation -->
+                            <div class="text-sm text-center font-medium text-gray-400">
+                                CEO, Aliverr Expo
+                            </div>
+                            <!-- / author designation -->
+
+                        </div>
+
+                    </div>
+
                 </div>
-                <!-- / author designation -->
 
                 <!-- author group -->
-                <div class="flex justify-center items-center gap-8 mt-10">
+                <div class="flex justify-center items-center gap-8 mt-10 min-h-[90px] max-h-[90px]">
 
                     <!-- team -->
-                    <img :src="'/images/testimonial-author-1.webp'" class="object-cover bg-cover rounded-full ring-5 ring-gray-300 max-w-[55px] max-h-[55px] min-w-[55px] min-h-[55px]" alt="testimonial-author-1" />
+                    <img :src="'/images/testimonial-author-1.webp'" @click="clickContent(1)" :class="{ 'max-w-[55px] max-h-[55px] min-w-[55px] min-h-[55px] ring-gray-300' : isContentText !== 1 , 'max-w-[75px] max-h-[75px] min-w-[75px] min-h-[75px] ring-yellow-700' : isContentText === 1 }" class="duration-500 cursor-pointer object-cover bg-cover rounded-full ring-5" alt="testimonial-author-1" />
                     <!-- / team -->
 
 
                     <!-- team -->
-                    <img :src="'/images/testimonial-author-6.webp'" class="object-cover bg-cover rounded-full ring-5 ring-gray-300 max-w-[75px] max-h-[75px] min-w-[75px] min-h-[75px]" alt="testimonial-author-6" />
+                    <img :src="'/images/testimonial-author-6.webp'" @click="clickContent(2)" :class="{ 'max-w-[55px] max-h-[55px] min-w-[55px] min-h-[55px] ring-gray-300' : isContentText !== 2 , 'max-w-[75px] max-h-[75px] min-w-[75px] min-h-[75px] ring-yellow-700' : isContentText === 2 }" class="duration-500 cursor-pointer object-cover bg-cover rounded-full ring-5" alt="testimonial-author-6" />
                     <!-- / team -->
 
 
                     <!-- team -->
-                    <img :src="'/images/testimonial-author-7.webp'" class="object-cover bg-cover rounded-full ring-5 ring-gray-300 max-w-[55px] max-h-[55px] min-w-[55px] min-h-[55px]" alt="testimonial-author-7" />
+                    <img :src="'/images/testimonial-author-7.webp'" @click="clickContent(3)" :class="{ 'max-w-[55px] max-h-[55px] min-w-[55px] min-h-[55px] ring-gray-300' : isContentText !== 3 , 'max-w-[75px] max-h-[75px] min-w-[75px] min-h-[75px] ring-yellow-700' : isContentText === 3 }" class="duration-500 cursor-pointer object-cover bg-cover rounded-full ring-5" alt="testimonial-author-7" />
                     <!-- / team -->
 
                 </div>
@@ -778,7 +868,8 @@ export default {
                 projects: 80,
                 designers: 30,
                 awards: 30
-            }
+            },
+            isContentText: 2,
         }
     },
     mounted() {
@@ -810,6 +901,9 @@ export default {
                 }
             };
             requestAnimationFrame(step);
+        },
+        clickContent(tab) {
+            this.isContentText = tab;
         }
     }
 }
